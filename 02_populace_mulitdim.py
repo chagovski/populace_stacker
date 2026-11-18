@@ -16,7 +16,7 @@ year_to = 2020
 quarter_to = 3
 
 # ------------------------------------------------------
-input_root = rf"I:\02_datapool\POPULATION\populace\{country_iso.upper()}"
+input_root = rf"I:\02_datapool\POPULATION\populace\{country_iso.upper()}\01_raw"
 processed_root = os.path.join(input_root, "02_processed")
 
 rasters = collect_rasters(

@@ -8,13 +8,13 @@ from osgeo import gdal
 
 
 # -------------------------------------------------------------------
-# Input folder path: THE ONLY REQUIRED INPUT 
+# Country ISO3 code: THE ONLY REQUIRED INPUT 
+# -------------------------------------------------------------------
+country_iso = "COD"
+
 # -------------------------------------------------------------------
 
-INPUT_FOLDER = Path(r"I:\02_datapool\POPULATION\IHME\COD\01_raw")
-
-# -------------------------------------------------------------------
-
+INPUT_FOLDER = Path(rf"I:\02_datapool\POPULATION\IHME\{country_iso.upper()}\01_raw")
 OUTPUT_FOLDER = INPUT_FOLDER.parent / "02_processed"
 
 # Always recursive
